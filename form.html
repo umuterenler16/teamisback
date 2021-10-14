@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+<style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          -webkit-font-smoothing: antialiased;
+          -moz-font-smoothing: antialiased;
+          -o-font-smoothing: antialiased;
+          text-rendering: optimizeLegibility;
+        }
+
+        body {
+          font-family: "Roboto", Helvetica, Arial, sans-serif;
+          font-weight: 100;
+          font-size: 12px;
+          line-height: 30px;
+          color: #777;
+          background: #007c95;
+        }
+
+        .container {
+          max-width: 400px;
+          width: 100%;
+          margin: 0 auto;
+          position: relative;
+        }
+
+        #contact {
+          background: #fff;
+          padding: 25px;
+          margin: 150px 0;
+          box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        }
+
+        #contact h3 {
+          display: block;
+          font-size: 30px;
+          font-weight: 300;
+          margin-bottom: 10px;
+        }
+        #contact input[type="text"],
+        #contact input[type="email"],
+        #contact input[type="tel"],
+        #contact input[type="url"],
+        #contact textarea {
+          width: 100%;
+          border: 1px solid #ccc;
+          background: #FFF;
+          margin: 0 0 5px;
+          padding: 10px;
+        }
+
+  
+
+        #contact textarea {
+          height: 100px;
+          max-width: 100%;
+          resize: none;
+        }
+
+        #contact button[type="submit"] {
+          cursor: pointer;
+          width: 100%;
+          border: none;
+          background: green;
+          color: #FFF;
+          margin: 0 0 5px;
+          padding: 10px;
+          font-size: 15px;
+        }
+</style>
+</head>
+<body>
+    <div class="container">  
+        <form id="contact" action="" method="post">
+          <h3>Takıma Alım</h3>
+          <h4>Başvuru Formu</h4>
+            <input placeholder="Adınız" type="text" tabindex="1" required autofocus>
+            <input placeholder="Soyadınız" type="text" tabindex="2" required>
+            <input placeholder="Telefon(Zorunlu)" type="tel" tabindex="3" required>
+            <input placeholder="Web Sitesi(İsteğe bağlı)" type="text" tabindex="4">
+            <textarea placeholder="Mesajınızı girin...." tabindex="5" required></textarea>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Kaydı Gönder.</button>
+         
+        </form>
+      </div>
+</body>
+</html>
